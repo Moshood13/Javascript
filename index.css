@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background:
+    linear-gradient(90deg, rgba(43, 66, 194, 0.5), rgba(43, 89, 243, 0.5) ),
+    url("todo-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    content: '';
+    padding: 50px;
+}
+
+
+.main {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(146, 43, 194, 0.8), rgba(43, 89, 243, 0.8) );
+    padding: 20px;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.header {
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+p {
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content {
+    width: 100%;
+    height: 50vh;
+    background: rgb(224, 222, 222);
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 500;
+    max-height: 50vh;
+    overflow: scroll;
+}
+.clear {
+    float: right;
+    font-size: 30px;
+ }
+#list {
+    display: flex;  
+    flex-direction: column;
+    margin-top: 20px;
+ }
+ .add-item {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    gap: 10px;
+ }
+ .fa-plus-circle {
+    font-size: 40px;
+    color: rgb(224, 222, 222);
+    
+ }
+ #input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    background: rgb(224, 222, 222);
+ }
+ #input:focus {
+    outline: white;
+ }
+ .footer {
+    color: rgb(255, 254, 254);
+    font-style: oblique;
+ }
+ .name {
+    color: whitesmoke;
+    font-size: 16px;
+    opacity: 0.9;
+ }
+ .name:hover {
+    color: blue;
+ }
+ .item {
+    margin-top: 20px;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom-right-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item > .del {
+    float: right;
+    margin-top: 8px;
+}
+.check {
+    display: inline;
+    margin: 0 5px;
+    font-size: 18px;
+}
+.text {
+    display: inline;
+    margin: 0 5px;
+    font-size: 20px;
+}
+.del {
+    display: inline;
+    color: black;   
+    font-size: 15px;
+}
+.rotate {
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}
+.linethrough {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fa-check-circle {
+    color: green;
+}
